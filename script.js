@@ -13,10 +13,11 @@ for(let i=1; i<=4; i++){
     //évènement click
     newCarre.addEventListener("click",function(){
         if(newCarre.getAttribute('class')=="carre"){
-        //modifie la class de newCarre -> active l'animation.
-        newCarre.classList.add("carre-clicked");
+            //modifie la class de newCarre -> active l'animation.
+            newCarre.classList.add("carre-clicked");
         }
         else{
+            //Si l'élément a déjà été cliqué, retour à son état initial
             newCarre.classList.remove("carre-clicked");
         }
     });   
