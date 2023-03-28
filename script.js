@@ -12,8 +12,14 @@ for(let i=1; i<=4; i++){
 
     //évènement click
     newCarre.addEventListener("click",function(){
-        newCarre.classList.add("carre-clicked")
-    });
+        if(newCarre.getAttribute('class')=="carre"){
+        //modifie la class de newCarre -> active l'animation.
+        newCarre.classList.add("carre-clicked");
+        }
+        else{
+            newCarre.classList.remove("carre-clicked");
+        }
+    });   
 };
 
 
