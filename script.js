@@ -10,4 +10,11 @@ for(let i=1; i<=4; i++){
     newCarre.innerText=i;
     container.appendChild(newCarre);
 
-}
+    //évènement click
+    newCarre.addEventListener("click",function(){
+        newCarre.classList.add("carre-clicked")
+    });
+};
+
+
+
